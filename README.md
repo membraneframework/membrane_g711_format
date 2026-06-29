@@ -19,7 +19,7 @@ the package can be installed by adding `membrane_g711_format` to your list of de
 ```elixir
 def deps do
   [
-    {:membrane_g711_format, "~> 0.1.0"}
+    {:membrane_g711_format, "~> 0.1.1"}
   ]
 end
 ```
