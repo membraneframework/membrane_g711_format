@@ -22,7 +22,7 @@ defmodule Membrane.G711.Mixfile do
       name: "Membrane G711 Format",
       source_url: @github_url,
       docs: docs(),
-      aliases: [docs: ["docs", &prepend_llms_links/1]]
+      aliases: [docs: ["docs", &append_llms_links/1]]
     ]
   end
 
@@ -76,7 +76,7 @@ defmodule Membrane.G711.Mixfile do
     ]
   end
 
-  defp prepend_llms_links(_) do
+  defp append_llms_links(_args) do
     output_dir = docs()[:output] || "doc"
     path = Path.join(output_dir, "llms.txt")
 
